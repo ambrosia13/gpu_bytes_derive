@@ -83,6 +83,3 @@ pub fn std430_derive(input: TokenStream) -> TokenStream {
         }
     }
 }
-
-#[cfg(test)]
-mod tests {}
