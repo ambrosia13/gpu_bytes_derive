@@ -60,7 +60,7 @@ pub fn std430_derive(input: TokenStream) -> TokenStream {
 
             quote! {
                 impl gpu_bytes::AsStd430 for #name {
-                    fn as_std140(&self) -> gpu_bytes::Std430Bytes {
+                    fn as_std430(&self) -> gpu_bytes::Std430Bytes {
                         let mut buf = gpu_bytes::Std430Bytes::new();
 
                         #(
