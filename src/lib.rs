@@ -19,8 +19,8 @@ pub fn std140_derive(input: TokenStream) -> TokenStream {
 
             quote! {
                 impl gpu_bytes::AsStd140 for #name {
-                    fn as_std140(&self) -> Std140Bytes {
-                        let mut buf = Std140Bytes::new();
+                    fn as_std140(&self) -> gpu_bytes::Std140Bytes {
+                        let mut buf = gpu_bytes::Std140Bytes::new();
 
                         #(
                             #write_calls
