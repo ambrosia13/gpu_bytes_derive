@@ -20,7 +20,7 @@ dependencies = [
 [[package]]
 name = "gpu_bytes"
 version = "0.1.0"
-source = "git+https://github.com/ambrosia13/gpu_bytes.git#2fb62b503daae611f50f0f2a8c92ba00178c9b36"
+source = "git+https://github.com/ambrosia13/gpu_bytes.git#e5d63e225791404ad0e1a328bea00237c7edd480"
 dependencies = [
  "bytemuck",
  "glam",
