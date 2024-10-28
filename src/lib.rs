@@ -26,6 +26,8 @@ pub fn std140_derive(input: TokenStream) -> TokenStream {
                             #write_calls
                         )*
 
+                        buf.align();
+
                         buf
                     }
                 }
@@ -66,6 +68,8 @@ pub fn std430_derive(input: TokenStream) -> TokenStream {
                         #(
                             #write_calls
                         )*
+
+                        buf.align();
 
                         buf
                     }
